@@ -19,10 +19,14 @@ angular.module('userProfiles').service("mainService", function() {
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
   }];
 
-function getUsers(data) {
+
+
+this.getUsers = function() {
     return data;
   };
 
-this.getUsers = getUsers(data);
+this.toggleFavorite = function(userIndex) {
+  data[userIndex].isFavorite = !data[userIndex].isFavorite;
+}
 
 });
