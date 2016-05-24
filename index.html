@@ -8,12 +8,13 @@
 <body ng-controller="MainController">
 
     {{thisAppIsBroken}}
-
-<div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
-  <img ng-src="{{user.avatar}}"/>
-  <span>{{user.first_name}}</span>
-  <span>{{user.last_name}}</span>
-  <button ng-click="toggleFavorite(user.id)">Favorite+</button>
+<div class="friends">
+  <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
+    <img ng-src="{{user.avatar}}"/><br/>
+    <span>{{user.first_name}}</span>
+    <span>{{user.last_name}}</span></br/>
+    <button ng-click="toggleFavorite(user.id)">Favorite+</button>
+  </div>
 </div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>

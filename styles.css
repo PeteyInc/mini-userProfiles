@@ -1,3 +1,13 @@
 .favorite {
     background-color: lightblue;
 }
+
+.friends {
+  margin-top: 20px;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+}
+div {
+  text-align: center;
+}
